@@ -39,6 +39,15 @@ main{
     margin: 0 auto;
 }
 
+main > section{
+    margin: 130px;
+}
+
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+
 /* header styles */
 
 /* navbar related styles */
@@ -85,9 +94,24 @@ main{
     width: 100%;
 }
 
-/* team and features  rrelated style*/
+/* team and features related style*/
 .teams{
     align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.features-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+#quick-list{
+    font-weight: 500;
 }
 
 /* responsive media query */
