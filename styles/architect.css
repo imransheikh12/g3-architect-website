@@ -34,6 +34,11 @@
     border-radius: 8px;
 }
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* header styles */
 
 /* navbar related styles */
@@ -78,6 +83,11 @@
 
 .banner-img{
     width: 100%;
+}
+
+/* team and features  rrelated style*/
+.teams{
+    align-items: center;
 }
 
 /* responsive media query */
