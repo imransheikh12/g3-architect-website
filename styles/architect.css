@@ -158,13 +158,36 @@ main > section{
         flex-direction: column;
     }
 
-    .team-img-container{
-        grid-template-columns: repeat(1, 1fr);
+    .team-img-container, .facts-container,
+    .sponspors-company
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .facts-container, .sponspors-company{
+        justify-items: center;
+        gap: 24px;
     }
 
     .our-features{
         margin-left: 20px;
     }
+}
+
+/* sponspors related styles */
+.sponspors-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponspors-company{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.sponspors-company img{
+    filter: grayscale(100%);
 }
 
 /* medium size devvice */
@@ -174,6 +197,12 @@ main > section{
     }
     .our-features{
         margin: 50px auto;
+    }
+
+    .sponspors-company, .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
     }
     
 }
